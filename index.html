@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Link Start !</title>
+  <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-mixin id="cylinder"
+               geometry="primitive: cylinder; radius:0.5; height:10">
+      </a-mixin>
+
+    </a-assets>
+    <!-- <a-plane material="shader: ocean; color: red" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane> -->
+    <a-entity layout="type: circle; radius: 5;" position="0 0 0" rotation="90 0 0" >
+      <a-entity mixin="cylinder" position="-3 -5 -2" color="#7BC8A4" >
+        <a-animation attribute="position"
+              dur="7000"
+              from="-3 -5 -2"
+              to="-3 50 -2"
+              repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="3 -5 -1" >
+        <a-animation attribute="position"
+              dur="7000"
+              from="3 -5 -1"
+              to="3 50 -1"
+              repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="1 -16 -3">
+        <a-animation attribute="position"
+              dur="7000"
+              from="1 -16 -3"
+              to="1 34 -3"
+              repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="-2 -7 -4">
+        <a-animation attribute="position"
+              dur="7000"
+              from="-2 -7 -4"
+              to="-2 34 -4"
+              repeat="indefinite"></a-animation>
+      </a-entity>
+
+    </a-entity>
+    <a-entity position="0 1.8 5">
+    <a-camera wasd-controls></a-camera>
+    </a-entity>
+    <a-sky color="#ECECEC"></a-sky>
+    <a-light color="#FFF" position="0 1.8 5"></a-light>
+  </a-scene>
+
+</body>
+
+</html>
