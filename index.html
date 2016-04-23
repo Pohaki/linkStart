@@ -11,41 +11,188 @@
   <a-scene>
     <a-assets>
       <a-mixin id="cylinder"
-               geometry="primitive: cylinder; radius:0.5; height:10">
+               geometry="primitive: cylinder; radius:0.5; height:15">
       </a-mixin>
+      <a-mixin id="cylinder2"
+              geometry="primitive: cylinder; radius: 0.5; height:20">
 
     </a-assets>
     <!-- <a-plane material="shader: ocean; color: red" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane> -->
     <a-entity layout="type: circle; radius: 5;" position="0 0 0" rotation="90 0 0" >
+      <!-- Premiere salve -->
       <a-entity mixin="cylinder" position="-3 -5 -2" color="#7BC8A4" >
         <a-animation attribute="position"
-              dur="7000"
-              from="-3 -5 -2"
+              dur="2000"
+              from="-3 -23 -2"
               to="-3 50 -2"
-              repeat="indefinite"></a-animation>
+              ></a-animation>
       </a-entity>
       <a-entity mixin="cylinder" position="3 -5 -1" >
         <a-animation attribute="position"
-              dur="7000"
-              from="3 -5 -1"
+              dur="2000"
+              from="3 -23 -1"
               to="3 50 -1"
-              repeat="indefinite"></a-animation>
+              ></a-animation>
       </a-entity>
       <a-entity mixin="cylinder" position="1 -16 -3">
         <a-animation attribute="position"
-              dur="7000"
-              from="1 -16 -3"
+              dur="2000"
+              from="1 -46 -3"
               to="1 34 -3"
-              repeat="indefinite"></a-animation>
+              ></a-animation>
       </a-entity>
       <a-entity mixin="cylinder" position="-2 -7 -4">
         <a-animation attribute="position"
-              dur="7000"
-              from="-2 -7 -4"
+              dur="2000"
+              from="-2 -28 -4"
               to="-2 34 -4"
-              repeat="indefinite"></a-animation>
+              ></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="-5 -20 -5">
+        <a-animation attribute="position"
+              dur="2000"
+              from="-5 -20 -5"
+              to="-5 30 -5"
+              ></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="3 -20 -5">
+        <a-animation attribute="position"
+              dur="2000"
+              from="3 -20 -5"
+              to="3 30 -5"
+              ></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="6 -17 -1">
+        <a-animation attribute="position"
+              dur="2000"
+              from="6 -50 -1"
+              to="6 40 -1"
+              ></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="0 -20 1">
+        <a-animation attribute="position"
+              dur="2000"
+              from="0 -50 1"
+              to="0 30 1"
+              ></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="2 -90 3">
+        <a-animation attribute="position"
+              dur="2000"
+              from="2 -90 3"
+              to="2 30 3"
+              ></a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder" position="6 -17 -1">
+        <a-animation attribute="position"
+              dur="2000"
+              from="6 -170 -1"
+              to="6 40 -1"
+              ></a-animation>
       </a-entity>
 
+
+    </a-entity>
+    <a-entity layout="type: circle; radius: 5;" position="0 0 0" rotation="90 0 0" >
+      <!--middle-->
+      <a-entity mixin="cylinder2" position="3 -120 -1">
+        <a-animation attribute="position"
+              dur="10000"
+              from="3 -120 -1"
+              to="3 40 -1"
+              >
+              <a-animation attribute="scale"
+                  dur="9840"
+                  from="3 -120 -1"
+                  to="3 40 -1"></a-animation>
+            </a-animation>
+      </a-entity>
+      <!--top-->
+      <a-entity mixin="cylinder2" position="1 -120 -4">
+        <a-animation attribute="position"
+              dur="10000"
+              from="1 -120 -4"
+              to="1 40 -4"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="1 -120 -4"
+                  to="1 40 -4"></a-animation>
+            </a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder2" position="0 -120 -3">
+        <a-animation attribute="position"
+              dur="10000"
+              from="0 -120 -3"
+              to="0 40 -3"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="0 -120 -3"
+                  to="0 40 -3"></a-animation>
+            </a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder2" position="-1 -120 -4">
+        <a-animation attribute="position"
+              dur="10000"
+              from="-1 -120 -4"
+              to="-1 40 -4"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="-1 -120 -4"
+                  to="-1 40 -4"></a-animation>
+            </a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder2" position="-0.7 -120 -4.2">
+        <a-animation attribute="position"
+              dur="10000"
+              from="-0.3 -120 -4.2"
+              to="-0.3 40 -4.2"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="-0.3 -120 -4.2"
+                  to="-0.3 40 -4.2"></a-animation>
+            </a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder2" position="-2 -120 -3.7">
+        <a-animation attribute="position"
+              dur="10000"
+              from="-2 -120 -3.7"
+              to="-2 40 -3.7"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="-2 -120 -3.7"
+                  to="-2 40 -3.7"></a-animation>
+            </a-animation>
+      </a-entity>
+      <a-entity mixin="cylinder2" position="-3 -120 -3">
+        <a-animation attribute="position"
+              dur="10000"
+              from="-3 -120 -3"
+              to="-3 40 -3"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="-3 -120 -3"
+                  to="-3 40 -3"></a-animation>
+            </a-animation>
+      </a-entity>
+      <!--down-->
+      <a-entity mixin="cylinder2" position="3 -120 2">
+        <a-animation attribute="position"
+              dur="10000"
+              from="3 -120 2"
+              to="3 40 2"
+              >
+              <a-animation attribute="scale"
+                  dur="10000"
+                  from="3 -120 2"
+                  to="3 40 2"></a-animation>
+            </a-animation>
+      </a-entity>
     </a-entity>
     <a-entity position="0 1.8 5">
     <a-camera wasd-controls></a-camera>
