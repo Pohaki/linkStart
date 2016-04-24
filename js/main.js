@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
-  document.addEventListener('click',function(){
+  $('#Start').on('click',function(){
+    document.querySelector('#Start').emit('fade');
     var entities = [].slice.call(document.querySelectorAll(".c"));
-    document.querySelector('#Start').emit("fade");
     entities.forEach(function (el) { el.emit('start'); });
     console.log("je suis cliqué")
+    $("#Start").die('click');
   })
 });
