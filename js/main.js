@@ -4,6 +4,6 @@ $(document).ready(function(){
     var entities = [].slice.call(document.querySelectorAll(".c"));
     entities.forEach(function (el) { el.emit('start'); });
     console.log("je suis cliqué")
-    $('#Start').die('click');
+    $('#Start').remove();
   });
 });
